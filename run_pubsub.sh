@@ -76,6 +76,21 @@ while [[ $# -gt 0 ]]; do
       shift
       shift
       ;;
+    -n|--network)
+      NETWORK="$2"
+      shift
+      shift
+      ;;
+    -s|--subnetwork)
+      SUBNET="$2"
+      shift
+      shift
+      ;;
+    -sa|--serviceAccount)
+      SERACC="$2"
+      shift
+      shift
+      ;;
   *)
     echo "Unknown option $1"
     print_usage
