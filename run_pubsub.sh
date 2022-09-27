@@ -112,4 +112,10 @@ mvn \
     --numWorkers=1 \
     --maxNumWorkers=1 \
     --experiments=use_unified_worker,use_runner_v2 \
+    --autoscalingAlgorithm=NONE \
+    --enableStreamingEngine
+    --network=${NETWORK} \
+    --subnetwork=${SUBNET} \
+    --serviceAccount=${SERACC}
+
   "
