@@ -14,6 +14,9 @@ Usage: ./run_pubsub.sh
   -g <gcs bucket>
   -t <pubsub topic>
   -r <job region>
+  -n <network>
+  -s <subnetwork>
+  -sa <service account>
 EOF
   exit
 }
