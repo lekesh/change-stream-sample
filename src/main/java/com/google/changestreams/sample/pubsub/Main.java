@@ -121,6 +121,7 @@ public class Main {
         publisher.publish(PubsubMessage
             .newBuilder()
             .setData(data)
+            .putAttributes("modType", record.getModType())
             .setMessageId(messageId)
             .build()
         );
