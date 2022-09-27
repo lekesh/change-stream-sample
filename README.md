@@ -114,5 +114,8 @@ This script will dispatch a remote job in dataflow with the specified configurat
 - `-g|--gcs-bucket`: the Google Cloud Storage bucket to be used to stage temp files for the Dataflow execution
 - `-t|--pubsub-topic`: the Google Cloud Pubsub topic to be used to publish the results of the pipeline
 - `-r|--region`: the region where to execute the Dataflow job (for options see [Dataflow Locations](https://cloud.google.com/dataflow/docs/resources/locations))
+- `-n|--network`: VPC network
+- `-s|--subnetwork`: Subnetwork
+- `-sa|--seracc`: Service Account to be used
 
 The job executed here will spawn a single Dataflow worker to consume the change stream.
