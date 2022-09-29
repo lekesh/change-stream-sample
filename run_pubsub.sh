@@ -137,6 +137,5 @@ mvn \
     --enableStreamingEngine \
     --network=${NETWORK} \
     --subnetwork=${SUBNET} \
-    --serviceAccount=${SERACC}
-
+    --serviceAccount=${SERACC} \
   "
