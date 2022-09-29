@@ -110,6 +110,9 @@ test ! "${CHANGE_STREAM_NAME}" && echo "Missing change-stream-name" && print_usa
 test ! "${GCS_BUCKET}" && echo "Missing gcs-bucket" && print_usage
 test ! "${PUBSUB_TOPIC}" && echo "Missing pubsub-topic" && print_usage
 test ! "${REGION}" && echo "Missing region" && print_usage
+test ! "${NETWORK}" && echo "Missing network" && print_usage
+test ! "${SUBNET}" && echo "Missing subnetwork" && print_usage
+test ! "${SERACC}" && echo "Missing service account" && print_usage
 
 mvn \
   clean \
