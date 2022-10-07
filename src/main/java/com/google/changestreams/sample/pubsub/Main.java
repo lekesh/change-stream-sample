@@ -117,7 +117,16 @@ public class Main {
             + record.getServerTransactionId()
             + ";"
             + record.getRecordSequence();
-        final ByteString data = ByteString.copyFromUtf8(record.toString());
+        final String message_data = "Table Name: "
+            + record.getTableName() // java.lang.String
+            + "\nRow Type: "
+            + record.getRowType().toString() // java.util.List<ColumnType>
+            + "\nMods: "
+            + record.getMods().toString() // java.util.List<Mod>
+            + "\nMod Type: "
+            + record.getModType().toString(); // java.lang.Enum<ModType>
+
+        final ByteString data = ByteString.copyFromUtf8(message_data);
         publisher.publish(PubsubMessage
             .newBuilder()
             .setData(data)
